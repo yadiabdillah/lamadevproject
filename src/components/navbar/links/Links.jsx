@@ -20,6 +20,7 @@ const Links = ()=>{
     const session = true
     const isAdmin = true
     return (
+        <div className={styles.container}>
         <div className={styles.links}>
            {links.map((link=>(
            <NavLink item={link} key={link.title}  />
@@ -35,6 +36,14 @@ const Links = ()=>{
                 <button className={styles.logout}>Logout</button>
                 </>) :(<NavLink item={{title:"login" , path:"/login"}}/>)
            }
+        </div>
+        <button className={styles.menuButton} onClick={()=>SetOpen((prev)=>!prev)}>Menu</button>{
+            open &&     <div className={styles.mobileLinks}>
+               {links.map((link=>(
+           <NavLink item={link} key={link.title}  />
+           )))} 
+            </div>
+        }
         </div>
     )
 }
