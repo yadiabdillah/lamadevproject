@@ -13,11 +13,13 @@ const Home = () => {
     <div className={styles.brands}>
 
     </div>
-    
+    <div className={styles.brands}>
     <Image src="/brands.png" alt="" fill className={styles.brandImg} />
+    </div>
+  
   </div>
   <div className={styles.imgContainer}>
-    <Image src="hero.gif" fill className={styles.heroImg}  />
+    <Image src="/hero.gif" alt="" fill className={styles.heroImg}  />
    </div>
   </div>;
 };

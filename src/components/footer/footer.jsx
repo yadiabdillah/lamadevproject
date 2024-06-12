@@ -1,7 +1,12 @@
+import styles from "./footer.module.css"
+
 const Footer = ()=>{
     return (
-            <div>
-              <h1>This Is Footer</h1>
+            <div className={styles.container}>
+              <div className={styles.logo}>Lamadv</div>
+              <div className={styles.text}>
+                Lama Creative Thought Agency 
+              </div>
             </div>
     )
     }
